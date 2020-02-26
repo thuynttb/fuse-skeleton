@@ -80,6 +80,11 @@ export class ToolbarComponent implements OnInit, OnDestroy {
                 title: 'Turkish',
                 flag: 'tr',
             },
+            {
+                id: 'ja',
+                title: '日本語',
+                flag: 'ja',
+            },
         ];
 
         this.navigation = navigation;

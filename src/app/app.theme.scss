@@ -63,7 +63,7 @@ $custom_palettes: (
 
 // Angular Material typography
 $typography: mat-typography-config(
-    $font-family: 'Muli, Helvetica Neue, Arial, sans-serif',
+    $font-family: 'Noto Sans JP, Noto Sans, Muli, Helvetica Neue, Arial, sans-serif',
     $title: mat-typography-level(20px, 32px, 600),
     $body-2: mat-typography-level(14px, 24px, 600),
     $button: mat-typography-level(14px, 14px, 600),
@@ -81,6 +81,7 @@ $typography: mat-typography-config(
 @import "src/app/layout/components/chat-panel/chat-panel.theme";
 @import "src/app/layout/components/toolbar/toolbar.theme";
 @import "src/app/main/authentication/login/login.theme";
+@import "src/app/main/pages/site-management/site-management.theme";
 
 // Define a mixin for easier access
 @mixin components-theme($theme) {
@@ -89,6 +90,7 @@ $typography: mat-typography-config(
     @include chat-panel-theme($theme);
     @include toolbar-theme($theme);
     @include login-theme($theme);
+    @include site-management-theme($theme);
 }
 
 // -----------------------------------------------------------------------------------------------------
